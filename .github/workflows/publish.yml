@@ -35,7 +35,6 @@ jobs:
           else
           npm i
           fi
-          npm run build
     - run: npm test
   
   publish:
@@ -57,7 +56,6 @@ jobs:
           else
           npm i
           fi
-          npm run build
     - run: npm run semantic-release
       env: 
         NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
