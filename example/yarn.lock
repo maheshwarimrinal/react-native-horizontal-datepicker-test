@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@awrminkhodaei/react-native-horizontal-datepicker@^0.1.6":
+"react-native-horizontal-datepicker-test@^0.1.6":
   version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@awrminkhodaei/react-native-horizontal-datepicker/-/react-native-horizontal-datepicker-0.1.6.tgz#4b4165d9319d4ef663a9e4b5e3402ee1701ecd52"
+  resolved "https://registry.yarnpkg.com/react-native-horizontal-datepicker-test/-/react-native-horizontal-datepicker-0.1.6.tgz#4b4165d9319d4ef663a9e4b5e3402ee1701ecd52"
   integrity sha512-67kOrbp4wKs6l1wetkRgnXSJtrtWyRSON/M8Coc3ixbw3CYOVglBb/gT95CmiuBYweqFzsWv1GmqsQ3YscNyhg==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4":

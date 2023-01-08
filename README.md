@@ -3,7 +3,7 @@
 Jalali and gregorian react native horizontal datepicker 🔥
 
   <p align='center'>
-<img src="https://i.ibb.co/7Yh2GSP/package.png" alt="@awrminkhodaei/react-native-horizontal-datepicker" style="max-width: 100%;"/>
+<img src="https://i.ibb.co/7Yh2GSP/package.png" alt="react-native-horizontal-datepicker-test" style="max-width: 100%;"/>
 </p>
 
 
@@ -13,18 +13,18 @@ Jalali and gregorian react native horizontal datepicker 🔥
 
 ```sh
 
-npm install @awrminkhodaei/react-native-horizontal-datepicker
+npm install react-native-horizontal-datepicker-test
 
 or
 
-yarn add @awrminkhodaei/react-native-horizontal-datepicker
+yarn add react-native-horizontal-datepicker-test
 
 ```
 
 ## Usage
 
 ```js
-import HorizontalDatepicker from '@awrminkhodaei/react-native-horizontal-datepicker';
+import HorizontalDatepicker from 'react-native-horizontal-datepicker-test';
 
 // ...
 

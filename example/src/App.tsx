@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Platform, SafeAreaView, StyleSheet, Text } from 'react-native';
 import moment from 'moment-jalaali';
-import HorizontalDatepicker from '@awrminkhodaei/react-native-horizontal-datepicker';
+import HorizontalDatepicker from 'react-native-horizontal-datepicker-test';
 
 export default function App() {
   const [jalaliDate, setJalaliDate] = React.useState<Date>();
