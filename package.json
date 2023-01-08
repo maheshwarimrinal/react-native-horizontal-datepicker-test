@@ -1,6 +1,6 @@
 {
   "name": "react-native-horizontal-datepicker-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "horizontal datepicker for react-native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
