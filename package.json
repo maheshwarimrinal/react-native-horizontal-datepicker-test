@@ -34,13 +34,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/AwrminKhodaei/react-native-horizontal-datepicker",
-  "author": "awrminkhodaei <awrminkhodaei@gmail.com> (https://github.com/AwrminKhodaei)",
+  "repository": "https://github.com/maheshwarimrinal/react-native-horizontal-datepicker-test",
+  "author": "maheshwarimrinal <maheshwari.mrinal@gmail.com> (https://github.com/maheshwarimrinal)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AwrminKhodaei/react-native-horizontal-datepicker/issues"
+    "url": "https://github.com/maheshwarimrinal/react-native-horizontal-datepicker-test/issues"
   },
-  "homepage": "https://github.com/AwrminKhodaei/react-native-horizontal-datepicker#readme",
+  "homepage": "https://github.com/maheshwarimrinal/react-native-horizontal-datepicker-test#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
