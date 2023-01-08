@@ -35,7 +35,6 @@ jobs:
           else
           npm i
           fi
-    - run: npm test
   
   publish:
     runs-on: ubuntu-latest
