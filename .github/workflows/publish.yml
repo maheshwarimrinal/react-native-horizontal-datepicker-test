@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: '*'
+    branches: [ main ]
   pull_request:
     branches: '*'
 
@@ -16,8 +16,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
-        os: [ubuntu-latest]
+        node-version: [10.x, 12.x, 14.x, 15.x]
+        os: [ubuntu-latest, windows-latest]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -26,38 +26,21 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - name: build
-      run: |
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
+    - run: npm ci
+    - run: npm test
   
   publish:
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/main' }}
     needs: [quality]
-    steps:
+    steps: 
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        registry-url: https://registry.npmjs.org
-    - name: build
-      run: |
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
     - run: npm ci
     - run: npm run semantic-release
       env: 
-        NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.G_ACCESS_TOKEN }}
