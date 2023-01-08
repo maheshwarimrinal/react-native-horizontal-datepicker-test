@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -48,8 +48,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install dependencies
-    - run: |
+    - name: build
+      run: |
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then
